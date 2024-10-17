@@ -1,0 +1,110 @@
+:root {
+    --background-color: rgb(27, 27, 28);
+    --text-color: white;
+    --main-color: rgb(75, 75, 197);
+    --boxshadow-color: rgb(37, 37, 112);
+    --hover-color: rgb(0, 0, 0);
+}
+.subject{
+    font-size: 3.5rem; /* حجم الخط */
+    color: #ffffff; /* لون النص */
+    background: linear-gradient(90deg, var(--boxshadow-color), var(--main-color)); /* تدرج لوني */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* ملء النص باللون الشفاف */
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 20px; /* مساحة داخلية */
+    border-radius: 15px; /* زوايا دائرية */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* تأثير ظل */
+    position: relative; /* لتعيين موقع العناصر الداخلية */
+}
+
+/* تحديد نمط الصفحة */
+.templatsPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+.InterPage{
+    padding: 60px;
+}
+/* تحديد نمط الصناديق */
+.boxOnTem {
+    display: flex;
+    gap: 26px;
+    flex-wrap: wrap; /* الصناديق ستنتقل إلى السطر التالي إذا لم تتسع الشاشة */
+    justify-content: center; /* إضافة للمحاذاة الأفقية عند النزول لصف جديد */
+}
+
+/* الصندوق الفردي */
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 300px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.186);
+    border-radius: 10px;
+    transition: .4s;
+}
+.box:hover {
+    background-color: rgb(52, 51, 51);
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+/* الصورة داخل الصندوق */
+.image {
+    /* background-image: url('tem.png'); */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    border-radius: 8px;
+}
+
+/* نمط النص في الصندوق */
+h5 {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 5px 0;
+}
+
+
+
+
+.saveButton{
+    position: absolute;
+    background-color: white;
+    color: red;
+}
+
+
+
+
+/*==============================    boxes of books     ==================================*/
+
+
+.boxBooks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 200px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.186);
+    border-radius: 10px;
+    transition: .4s;
+}
+.boxBooks:hover {
+    background-color: rgb(52, 51, 51);
+    transform: scale(0.95);
+    cursor: pointer;
+}

@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root{
+    --background-color: rgb(27, 27, 28);
+    --text-color: white;
+    --main-color: rgb(75, 75, 197);
+    --boxshadow-color: rgb(37, 37, 112);
+    --hover-color: rgb(0, 0, 0);
+}
+body{
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/*===============================      img on introduction      =================================*/
+
+.carousel .slide img {
+    max-height: 60vh;
+    object-fit: cover; /* لضبط الصورة في الحاوية */
+    cursor: default;
+}
+.slide:hover{
+    cursor: default;
+    background-color: transparent;
+}
+/* @media (max-width: 480px){
+    .carousel.slide img {
+        width: 90%;
+    }
+} */
+
+
+/*------------------------------   h1 and p     ----------------------------------*/
+
+.tem{
+    width: 100%;
+}
+.h1Home{
+    font-size: 3.5rem; /* حجم الخط */
+    color: #ffffff; /* لون النص */
+    background: linear-gradient(90deg, var(--boxshadow-color), var(--main-color)); /* تدرج لوني */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* ملء النص باللون الشفاف */
+    width: fit-content;
+    margin: 80px auto;
+    padding: 10px 20px; /* مساحة داخلية */
+    border-radius: 15px; /* زوايا دائرية */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* تأثير ظل */
+    position: relative; /* لتعيين موقع العناصر الداخلية */
+}
+.pHome{
+        width: fit-content;
+        font-size: 1.5rem;
+        color: var(--text-color);
+        text-align: center;
+        margin: 30px auto;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background: linear-gradient(90deg, var(--boxshadow-color), var(--main-color));
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        opacity: .7;
+}
+@media (max-width: 480px){
+    .h1Home{
+        font-size: 2.4rem;
+    }
+   .pHome{
+    font-size: .9rem;
+   }
+}
+
+
+/*------------------------------    box of templets and interactive and books    ---------------------------------*/
+
+
+.Tbox{
+    width: 70%;
+    height: auto;
+    text-align: center;
+    margin: 30px auto;
+}
+@media (max-width: 768px) {
+    .Tbox{
+        width: 90%;
+    }
+}
+@media (max-width: 480px){
+    .Tbox{
+        width: 90%;
+    }
+}
+.container {
+    background-color: rgba(0, 0, 0, 0.186);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between; /* توزيع المساحة بين القسمين */
+    align-items: center;
+    margin: 60px auto;
+    height: auto;
+    transition: .32s;
+}
+.container:hover{
+    transform: scale(.97);
+}
+
+.left-box, .right-box {
+    flex: 1; /* تقسيم الصندوق بالتساوي */
+    padding: 10px;
+}
+
+.right-box {
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+    font-size: 2rem;
+}
+@media (max-width: 480px) {
+    .right-box{
+        font-size: 1.6rem;
+    }
+}
+.imgT {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.466), rgba(0, 0, 0, 0.694)),  url('te.png');
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover; /* لضبط حجم الصورة */
+    background-position: center;
+    position: relative; /* لإعداد الـ button بداخل الصورة */
+    width: 100%;
+    padding-top: 70%; /* تعديل ارتفاع الصندوق حسب نسبة العرض */
+}
+
+/*===========================   interactive box img     ====================================*/
+.imgIC{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.466), rgba(0, 0, 0, 0.694)),  url('ic.png');
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover; /* لضبط حجم الصورة */
+    background-position: center;
+    position: relative; /* لإعداد الـ button بداخل الصورة */
+    width: 100%;
+    padding-top: 70%; /* تعديل ارتفاع الصندوق حسب نسبة العرض */
+}
+.imgB{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.466), rgba(0, 0, 0, 0.694)), url('books.png');
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover; /* لضبط حجم الصورة */
+    background-position: center;
+    position: relative; /* لإعداد الـ button بداخل الصورة */
+    width: 100%;
+    padding-top: 70%; /* تعديل ارتفاع الصندوق حسب نسبة العرض */
+}
+/*==============================     btn hover border form bottom       ==================================*/
+
+/* الزر الأساسي */
+.btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--background-color);
+    border-radius: 5px;
+    color: var(--main-color);
+    font-size: 1.8rem;
+    font-weight: bolder;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.694);
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+}
+@media (max-width: 480px) {
+    .btn{
+        width: auto !important;;
+        font-size: 1.3rem;
+    }
+}
+
+/* إضافة تأثير الخلفية باستخدام ::after */
+.btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; /* ارتفاع الـ border */
+    background-color: var(--main-color); /* لون الحدود */
+    transition: height 0.3s ease-in-out; /* تأثير الانتقال */
+    z-index: 0; /* خلف النص */
+}
+
+/* عند التمرير على الزر، تغطية الخلفية بالكامل */
+.btn:hover::after {
+    height: 100%; /* تغطية الزر بالكامل */
+}
+
+.btn div{
+    position: relative;
+    z-index: 999;
+}
+/* تأثير التكبير عند التمرير على الزر */
+.btn:hover {
+    transform: translate(-50%, -50%) scale(1.05); /* تكبير الزر عند التمرير */
+    color: var(--background-color);
+}
+
+/*=============================     Icons / html and css and js and react     ===================================*/
+
+.leftSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.iconsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* مسافة بين الأيقونات */
+    margin-bottom: 1.5rem;
+}
+
+.iconsContainer svg {
+    transition: transform 0.3s ease;
+}
+
+.iconsContainer svg:hover {
+    transform: scale(1.1); /* تكبير الأيقونات عند التمرير فوقها */
+}
+@media (max-width: 480px){
+    .iconsContainer {
+        width: 94%;
+    }
+}
+
+/*==============================     about / why      ==============================*/
+.why-codejr-container {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 2rem;
+    text-align: center;
+}
+
+.why-codejr-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.reasons-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Space between boxes */
+}
+
+.reason-box {
+    background-color: rgba(0, 0, 0, 0.186);
+    border-radius: 15px;
+    padding: 2rem;
+    width: 190px; /* Fixed width for boxes */
+    height: 310px; /* Fixed height for boxes */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures even spacing for content */
+    transition: transform 0.3s ease;
+}
+
+.reason-box h2 {
+    color: var(--main-color);
+}
+
+.reason-box p {
+    font-size: 1rem;
+    line-height: 1.5;
+    flex-grow: 1; /* Ensures that text takes up available space */
+}
+
+.reason-box:hover {
+    transform: scale(0.96);
+}
+@media (max-width: 768px) {
+    .reason-box{
+        height: auto;
+    }
+}
+@media (max-width: 480px) {
+    .reason-box {
+        height: auto; /* اجعل الارتفاع تلقائي */
+        margin: 0; /* إزالة الهامش */
+        width: 80%; /* تحديد عرض الصندوق */
+    }
+    .reasons-container {
+        flex-direction: column; /* جعل الصناديق عمودية */
+        gap: 1.4rem; /* المسافة بين الصناديق */
+        align-items: center; /* لضمان مركزية الصناديق */
+        margin: 0 auto; /* مركزية الحاوية */
+    }
+}
+
+/*=============================    footer     ===================================*/
+
+.footer{
+    background-color: rgba(0, 0, 0, 0.186);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icons-social{
+    margin: 12px;
+    color: var(--main-color);
+    /* background-color: whitesmoke; */
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+.is{
+    cursor: pointer;
+}
+.is:hover{
+    opacity: .5;
+}
+.c{
+    color: var(--text-color);
+    font-size: 0.7rem;
+}
+a {
+    text-decoration: none; /* إزالة الخط السفلي */
+    color: inherit; /* استخدام نفس اللون للنص دون تغييره */
+}
+
+a:visited {
+    color: inherit; /* إلغاء تغيير اللون بعد الضغط */
+}
+/*================================          ====================================*/

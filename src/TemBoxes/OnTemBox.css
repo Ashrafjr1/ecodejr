@@ -1,0 +1,103 @@
+.InPageT {
+    align-items: center;
+    padding: 60px;
+}
+
+.tomato-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* لتوسيع العناصر في المنتصف */
+    margin: 20px; /* لإضافة مسافة حول المحتوى */
+}
+
+.codes-container {
+    width: 100%;
+    display: flex; /* لتوزيع الصناديق بجانب بعضها البعض */
+    justify-content: center; /* لتوسيع العناصر في المنتصف */
+    gap: 20px; /* المسافة بين الصناديق */
+    flex-wrap: wrap; /* السماح بانتقال الصناديق إلى السطر التالي إذا كانت صغيرة */
+}
+
+.tomato-title {
+    font-size: 3.5rem; /* حجم الخط */
+    color: #ffffff; /* لون النص */
+    background: linear-gradient(90deg, var(--boxshadow-color), var(--main-color)); /* تدرج لوني */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* ملء النص باللون الشفاف */
+    width: fit-content;
+    margin: 30px auto;
+    padding: 10px 20px; /* مساحة داخلية */
+    border-radius: 15px; /* زوايا دائرية */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* تأثير ظل */
+    position: relative; /* لتعيين موقع العناصر الداخلية */
+}
+
+.tomato-photo {
+    width: 80%; /* عرض الصورة بنسبة 80% */
+    max-width: 800px; /* أقصى عرض للصورة */
+    height: auto; /* السماح بارتفاع تلقائي للصورة */
+    aspect-ratio: 16 / 9; /* نسبة العرض إلى الارتفاع (يمكن تعديلها حسب احتياجك) */
+    background-image: url('./tomato.png'); /* استبدل بمسار الصورة الصحيح */
+    background-size: cover; /* تغطية الصورة بالكامل */
+    background-position: center; /* مركز الصورة */
+    margin: 0 auto; /* توسيط الصورة */
+    margin-bottom: 50px; /* مساحة بين الصورة وصندوق الكود */
+    border-radius: 15px; /* زوايا دائرية للصورة */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* تأثير ظل للصورة */
+}
+
+
+.tomato-code-container {
+    font-size: .6rem;
+    width: 100%; /* عرض الصندوق */
+    max-width: 600px; /* عرض أقصى للصندوق */
+    border: 1px solid #ddd; /* لون الحدود */
+    border-radius: 5px; /* زوايا مدورة */
+    padding: 0px; /* مساحة داخل الصندوق */
+    background-color: #f9f9f9; /* لون خلفية الصندوق */
+    max-height: 400px; /* الحد الأقصى للارتفاع */
+    overflow: auto; /* إظهار شريط التمرير عند الحاجة */
+}
+
+.buttons {
+    display: flex; /* لتوسيع الأزرار في صف */
+    justify-content: space-between; /* توزيع الأزرار */
+    margin-top: 10px; /* مساحة فوق الأزرار */
+}
+
+.copy-button,
+.download-button,
+.github-button {
+    padding: 8px 12px; /* مساحة داخل الأزرار */
+    border: none; /* إخفاء الحدود */
+    border-radius: 4px; /* زوايا مدورة للأزرار */
+    cursor: pointer; /* تغيير شكل المؤشر عند المرور */
+}
+
+.copy-button {
+    background-color: #4CAF50; /* لون زر النسخ */
+    color: white; /* لون خط زر النسخ */
+}
+
+.download-button {
+    background-color: #2196F3; /* لون زر التنزيل */
+    color: white; /* لون خط زر التنزيل */
+}
+
+/*================================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

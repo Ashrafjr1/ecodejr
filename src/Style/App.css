@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root{
+  --background-color: rgb(28, 27, 27);
+  --text-color: white;
+  --main-color: rgb(75, 75, 197);
+  --boxshadow-color: rgb(37, 37, 112);
+  --hover-color: rgb(0, 0, 0);
+}
+body{
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.backbtn{
+  position: fixed;
+  left: 4%;
+  top: 16%;
+  border: none;
+  padding: 12px 16px;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  border-radius: 50%;
+  font-size: 1.5rem;
+  z-index: 999999;
+  transition: .3s;
+}
+.backbtn:hover{
+    cursor: pointer;
+  background-color: var(--boxshadow-color);
+}
+@media (max-width: 770px) {
+  .backbtn{
+    top: 15%;
+    left: 9%;
+  }
+}
+@media (max-width: 480px) {
+  .backbtn{
+    top: 7%;
+    left: 13%;
+  }
+}
+
+.logo{
+  color: var(--text-color);
+  font-size: 2.4rem;
+}
+
+.header{
+  padding: 18px;
+  border-bottom: var(--main-color) solid 2px;
+  position: relative; /* ليكون حقل البحث داخل الـ header */
+}
+.inHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+}
+.searchBtn{
+  background-color: var(--main-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.2s ;
+}
+.searchBtn:hover{
+  /* box-shadow: 1px 4px 8px var(--boxshadow-color); */
+  background-color: #0056b3;
+}
+
+/* حقل البحث في منتصف الهيدر */
+.searchBar {
+  position: absolute;
+  top: 50%; /* لتحريك حقل البحث عمودياً */
+  left: 50%; /* لتحريك حقل البحث أفقياً */
+  transform: translate(-50%, -50%); /* لضمان وضعه في المنتصف */
+  width: 300px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid var(--main-color);
+  outline: none;
+}
+
+/* تصغير حجم حقل البحث عندما يكون غير ظاهر */
+.hidden {
+  display: none;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 1000;
+}
+
+
+
+
+
+.login-btn {
+  padding: 10px 15px;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 3px;
+  transition: all 0.2s ;
+  text-decoration: none; /* إزالة التسطير من الرابط */
+}
+
+.login-btn:hover {
+  background-color: #0056b3; /* لون الخلفية عند التمرير */
+}

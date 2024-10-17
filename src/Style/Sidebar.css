@@ -1,0 +1,127 @@
+
+.sidebar {
+    position: fixed;
+    left: -22%; /* مخفي */
+    top: 25%;
+    width: 15%;
+    height: fit-content;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border-radius: 0px 20px 0px 20px;
+    transition: 0.4s ease;
+    padding: 20px;
+    z-index: 999;
+}
+
+.sidebar.open {
+    left: 0;
+    max-width: 15%;
+    border-radius: 0px 20px 0px 20px;
+    height: fit-content;
+}
+
+.menu-icon {
+    border-radius: 0 50% 50% 0;
+    position: fixed;
+    left: 0; /* مكان الأيقونة الثابت */
+    top: 20.3%;
+    transform: translateY(-50%); /* لتمركز الأيقونة في منتصف العمود */
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+
+}
+
+
+.menu-icon:hover {
+    background-color: var(--boxshadow-color);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.sidebar ul li{
+    padding: 15px 0;
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--boxshadow-color);
+}
+li{
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: .3s;
+}
+li:hover{
+    background-color: var(--boxshadow-color);
+}
+a{
+    text-decoration: none;
+}
+
+.social-links {
+    display: flex; /* استخدام الفليكس */
+    justify-content: center; /* تمركز الكلمات */
+    margin-top: 20px; /* مسافة فوق الكلمات */
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 1rem;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.social-links a:hover {
+    color: black;
+}
+
+
+
+
+
+/* استعلامات الوسائط للأجهزة اللوحية */
+@media (max-width: 768px) {
+    .sidebar {
+        left: -30%; /* مخفي */
+    }
+
+    .sidebar.open {
+        left: 0; /* يظهر عند الفتح */
+    }
+
+    .menu-icon {
+        top: 20%; /* تغيير موقع الأيقونة */
+    }
+}
+
+/* استعلامات الوسائط للهواتف المحمولة */
+@media (max-width: 480px) {
+    .sidebar {
+        top: 12.5%;
+        left: -90%; /* مخفي */
+    }
+
+    .sidebar.open {
+        left: 0; /* يظهر عند الفتح */
+    }
+
+    .menu-icon {
+        top: 10%;
+        font-size: 20px; /* تغيير حجم الأيقونة */
+        padding: 10px; /* تغيير حواف الأيقونة */
+    }
+
+    .sidebar ul li {
+        font-size: 1rem; /* تغيير حجم النص */
+    }
+}
