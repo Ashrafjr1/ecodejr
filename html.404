@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Page Not Found</title>
+    <script>
+      // توجيه جميع الطلبات إلى index.html
+      window.location.replace('/');
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
