@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ecodejr/static/css/main.1831c46c.css",
-    "main.js": "/ecodejr/static/js/main.8ef7eab9.js",
+    "main.js": "/ecodejr/static/js/main.be8ca65e.js",
     "static/js/453.22f8de8e.chunk.js": "/ecodejr/static/js/453.22f8de8e.chunk.js",
     "static/media/textbook.pdf": "/ecodejr/static/media/textbook.8f61bdf7bbce9222e95c.pdf",
     "static/media/git.pdf": "/ecodejr/static/media/git.2ad608d54d6b7bb1fe6b.pdf",
@@ -29,11 +29,11 @@
     "static/media/tapbar.webp": "/ecodejr/static/media/tapbar.61648ec871a47b23a44f.webp",
     "index.html": "/ecodejr/index.html",
     "main.1831c46c.css.map": "/ecodejr/static/css/main.1831c46c.css.map",
-    "main.8ef7eab9.js.map": "/ecodejr/static/js/main.8ef7eab9.js.map",
+    "main.be8ca65e.js.map": "/ecodejr/static/js/main.be8ca65e.js.map",
     "453.22f8de8e.chunk.js.map": "/ecodejr/static/js/453.22f8de8e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1831c46c.css",
-    "static/js/main.8ef7eab9.js"
+    "static/js/main.be8ca65e.js"
   ]
 }
