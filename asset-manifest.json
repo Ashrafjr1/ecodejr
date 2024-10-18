@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ecodejr/static/css/main.1831c46c.css",
-    "main.js": "/ecodejr/static/js/main.fe5a7425.js",
+    "main.js": "/ecodejr/static/js/main.8ef7eab9.js",
     "static/js/453.22f8de8e.chunk.js": "/ecodejr/static/js/453.22f8de8e.chunk.js",
     "static/media/textbook.pdf": "/ecodejr/static/media/textbook.8f61bdf7bbce9222e95c.pdf",
     "static/media/git.pdf": "/ecodejr/static/media/git.2ad608d54d6b7bb1fe6b.pdf",
@@ -22,17 +22,18 @@
     "static/media/secondimg.webp": "/ecodejr/static/media/secondimg.28ef48630964e4a00b4b.webp",
     "static/media/secimg.webp": "/ecodejr/static/media/secimg.ece1a3a383a9e0400114.webp",
     "static/media/firstimg.webp": "/ecodejr/static/media/firstimg.05cb66b4dac73162c323.webp",
+    "static/media/2hover.webp": "/ecodejr/static/media/2hover.3bc1cc66b64b9f0830a4.webp",
     "static/media/hoverbtn.webp": "/ecodejr/static/media/hoverbtn.f8d8980f4fc03cdadd7b.webp",
     "static/media/newbtn.webp": "/ecodejr/static/media/newbtn.5bb6149971913d6efe3a.webp",
     "static/media/wlogin.webp": "/ecodejr/static/media/wlogin.32ccf218768e1ee297dd.webp",
     "static/media/tapbar.webp": "/ecodejr/static/media/tapbar.61648ec871a47b23a44f.webp",
     "index.html": "/ecodejr/index.html",
     "main.1831c46c.css.map": "/ecodejr/static/css/main.1831c46c.css.map",
-    "main.fe5a7425.js.map": "/ecodejr/static/js/main.fe5a7425.js.map",
+    "main.8ef7eab9.js.map": "/ecodejr/static/js/main.8ef7eab9.js.map",
     "453.22f8de8e.chunk.js.map": "/ecodejr/static/js/453.22f8de8e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1831c46c.css",
-    "static/js/main.fe5a7425.js"
+    "static/js/main.8ef7eab9.js"
   ]
 }
